@@ -16,3 +16,4 @@ phases:
 artifacts:
   files:
     - "**/*"
+  base-director: 'aws_code_pipeline/'  
