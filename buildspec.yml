@@ -10,7 +10,7 @@ phases:
       - ls -al
       - python --version
       - aws --version
-      - aws s3 cp . s3://codepipelinetest-manoj
+      - aws s3 sync . s3://codepipelinetest-manoj
   build:
     commands:
       - echo Build started on `date`
