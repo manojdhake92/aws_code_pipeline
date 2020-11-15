@@ -10,7 +10,7 @@ phases:
       - ls -al
       - python --version
       - aws --version
-      - aws configure set --profile user1
+      - aws s3 ls s3://codepipelinetest-manoj
   build:
     commands:
       - echo Build started on `date`
