@@ -6,6 +6,7 @@ phases:
       - echo Install phase started...
       - ls -al
       - python --version
+      - aws --version
   pre_build:
     commands:
       - echo Started pre_build phase...
