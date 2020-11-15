@@ -7,9 +7,14 @@ phases:
       - ls -al
       - python --version
       - aws --version
+      - aws configure
   pre_build:
     commands:
       - echo Started pre_build phase...
+      - ls -al
+      - python --version
+      - aws --version
+      - aws configure
   build:
     commands:
       - echo Build started on `date`
