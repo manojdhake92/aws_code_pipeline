@@ -7,7 +7,7 @@ phases:
       - ls -al
       - python --version
       - aws --version
-      - aws configure
+      - aws configure set --profile user1
   pre_build:
     commands:
       - echo Started pre_build phase...
