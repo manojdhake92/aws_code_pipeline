@@ -4,17 +4,15 @@ phases:
   install:
     commands:
       - echo Install phase started...
-      - ls -ltr
+      - ls -al
+      - python --version
   pre_build:
     commands:
-      - echo Nothing to do in the pre_build phase...
+      - echo Started pre_build phase...
   build:
     commands:
       - echo Build started on `date`
   post_build:
     commands:
       - echo Build completed on `date`
-artifacts:
-  files:
-    - "**/*"
-  base-director: 'aws_code_pipeline/'  
+  
